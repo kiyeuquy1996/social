@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatPostsTable extends Migration
+class CreatePostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -21,9 +21,9 @@ class CreatPostsTable extends Migration
             $table->string('slug');
             $table->text('content');
             $table->string('url');
-            $table->integer('view_count', 10);
-            $table->integer('vote_count', 10);
-            $table->integer('comt_count', 10);
+            $table->integer('view_count');
+            $table->integer('vote_count');
+            $table->integer('comt_count');
             $table->timestamps();
         });
     }
